@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var currentUrl = window.location.href;
+            var newUrl = currentUrl.replace("https://mitmedialab.github.io/prg-extension-boilerplate/", "https://playground.raise.mit.edu/");
+            window.location.replace(newUrl);
+        });
+      
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, follow this <a id="redirect-link" href="#">link to the new page</a>.</p>
+    <script>
+        var currentUrl = window.location.href;
+        var newUrl = currentUrl.replace("https://mitmedialab.github.io/prg-extension-boilerplate/", "https://playground.raise.mit.edu/");
+        document.getElementById('redirect-link').href = newUrl;
+    </script>
+</body>
+</html>
